@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='DocApp'>
     <head>
         
         <!--see header, icons section , 218 -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Foodie</title>
+        <title>Appointment Scheduling</title>
         
 
-        <link rel="stylesheet" href="my.css">
+        <link rel="stylesheet" href="style.css">
         
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,6 +24,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- google icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 
 
     </head>
@@ -32,7 +35,7 @@
             <div class="header-nav-wrapper navbar-scrolltofixed">
                 <div class="container">
                     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                        <div class="container">
+                        <div class="container" style="color: cornflowerblue">
                             <div class="navbar-header page-scroll">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                                     <span class="sr-only">Toggle navigation</span>
@@ -40,7 +43,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand page-scroll" href="#page-top">DocSked</a>
+                                <a class="navbar-brand page-scroll" href="#page-top"><strong>Doct-o-Help</strong></a>
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,7 +54,7 @@
                                         <a class="page-scroll" href="#page-top"></a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#about">About</a>
+                                        <a class="page-scroll" href="#About">About</a>
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#services">Services</a>
@@ -59,6 +62,8 @@
                                     <li>
                                         <a class="page-scroll" href="#contact">Contact</a>
                                     </li>
+                                    
+                                    <span style="float: right"><li><strong><a href="https://app.acuityscheduling.com/schedule.php?owner=14878058" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script></strong></li></span>
                                 </ul>
                             </div>
                         </div>
@@ -124,7 +129,7 @@
             </section>
 
             <!-- Icons section starts -->
-            <section>
+            <section style="margin-top: 50px; margin-bottom: 100px">
                 <div class="container">
                     <div class="section-content">
                       <div class="row equal-height-inner" data-margin-top="-150px">
@@ -190,7 +195,7 @@
                             <div class="row" style="text-align: center">
                                 <h2>Book an Appointment</h2>
                                 <div class="col-sm-6 col-md-6">
-                                      <a href="#" class="btn btn-info btn-lg" role="button">Find Doctors</a>
+                                      <a href="mydoc.html" class="btn btn-info btn-lg" role="button">Find Doctors</a>
                                 </div>
                                 <div class="col-sm-6 col-md-6">
                                       <a href="#" class="btn btn-info btn-lg" role="button">Find Hospitals</a>
@@ -272,10 +277,61 @@
             </section>
             <!-- Section: Services  ends-->
 
+            
+                    
+        <div id="contact">
+            <div id="map"></div>
+            <div class="container content">
+                <h2>Contact</h2>
+                <p style="font-size: 19px">JECRC University, Jaipur</p>
+                    <br>
+                <a href="#" class="btn btn-info btn-lg">
+                  <span class="glyphicon glyphicon-phone-alt"></span> Contact <br>
+                </a>
 
+            </div>    
+        </div>
+        
+        
+        <script>
+            function initMap() {
+                var uluru = {lat: 26.775501, lng: 75.877173};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 16,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+        </script>
+        
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehMIU1SSBAjd7otopvefE9mOdMyH_OgQ&callback=initMap">
+    </script>
+        <footer>
+            <ul>
+                <li><a href="#" style="font-size: 18px">Home</a></li>
+                <li><a href="#contact" style="font-size: 18px">Contact</a></li>
+
+                <span>
+            <li><a href="https://www.facebook.com/teamfoodslab/"><i class="fa fa-facebook-square" style="font-size:24px"></i></a></li>
+            <li> <a href="https://twitter.com/"><i class="fa fa-twitter-square" style="font-size:24px"></i>
+                </a>
+            </li>
+            <li><a href="https://www.instagram.com/food_slab/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:24px"></i></a></li>
+            <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>
+            <li><a  href="https://plus.google.com/collections/featured"><i class="fa fa-google-plus-official" style="font-size:24px"></i></a></li>
+                </span>
+            </ul>
+        </footer>
             
             
-         <script src="my.js"></script>
+
+         <script src="main.js"></script>
        
     </body>
 </html>

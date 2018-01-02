@@ -25,7 +25,8 @@
         <!-- google icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <header id="header">
@@ -66,5 +67,50 @@
                 </div>
             </div>
         </header>
+        
+        <div class="main" ng-controller="mainController">
+            <div class="ui container">
+                <div class="hero">
+                    <p>Find the best doctors in town</p>
+                </div>      
+                <div ng-repeat="doctor in doctors" class="doctor">
+                    <div class="rest-wrapper">
+                        <div class="image">
+                            <img src="{{doctor.image}}" height="100" width="100">
+                        </div>
+                        <div class="rest-info">
+                            
+                            <div class="rest-name">
+                            <strong>{{doctor.name}}</strong>
+                            </div>
+                            <div>
+                               <strong> {{doctor.degree}}</strong>
+                            </div>
+                            <div class="rest-address">
+                                {{doctor.speciality}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rest-extra">
+                        <div class="type">
+                            <div><small>Cuisines:</small></div>
+                            <div><small>Cost for Two: </small></div>
+                            <div><small>Hours:</small></div>
+                        </div>
+                        <div class="value">
+                            <div>{{doctor.location}}</div>
+                            <div>{{doctor.cost}}</div>
+                            
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <strong>{{restaurant.vote}}</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+        
     </body>
 </html>

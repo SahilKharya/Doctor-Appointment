@@ -20,7 +20,9 @@ html {
         padding: 0;
     }
 }
-
+#header {
+    color: cornflowerblue;
+}
 p{
     font-size: 2rem;
 }
@@ -40,3 +42,128 @@ p{
     background-color: cornflowerblue;
 }
 
+
+
+
+.hero {
+    margin-bottom: 2rem;
+        background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 4px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant {
+    background-color: white;
+    position: relative;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.rest-wrapper {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.rest-wrapper .image {
+    margin-right: 1rem;
+}
+
+.rest-wrapper .image img {
+    border-radius: 4px;
+}
+
+.rest-wrapper .rest-name {
+    font-size: 24px;
+    color: #cb202d;
+}
+
+.rest-wrapper .rest-category {
+    color: #89959B;
+    text-transform: uppercase;
+}
+
+.rest-wrapper .rest-address {
+    color: #89959B;
+}
+
+.rest-extra {
+    display: flex;
+    margin-top: 1rem;
+    border-top: 1px solid #e7e7e7;
+    padding: 1rem;
+}
+
+.rest-extra .type {
+    text-transform: uppercase;
+     color: #89959B;
+     flex: none;
+     margin-right: 2rem;
+}
+
+
+
+            .name {
+                font-size: 23px;
+                color: #E65100;
+                margin-top: 30px;
+            }
+            #contact {
+                margin-top: 40px;
+            }
+            #map {
+                width: 100%;
+                height: 420px;
+                margin: 0 auto;
+                position: absolute;
+                padding: 20px;
+            }
+            .p{
+                text-align: center;
+            }
+            .content {
+                padding: 30px;
+                text-align: center;
+
+                margin: 10px 20px;
+                z-index: 2;
+                width: 30px;
+                height: 400px;
+                background: white;
+            }
+            .content p {
+                margin: 40px 20px;
+            }
+            
+                        footer {
+                margin-top: 50px;
+                
+            }
+            footer ul {
+                padding: 10px;
+                background: rgba(230,0,0,0.5);
+                
+               
+                }
+            footer li {
+                display: inline;
+                padding: 0px 10px 0px 10px;
+              
+            }
+
+.modal-footer {
+      background-color: #f9f9f9;
+  }
+            span {
+                float: right;
+            }
