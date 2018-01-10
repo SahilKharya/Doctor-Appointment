@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='DocApp'>
+    <head>
+        
+        <!--see header, icons section , 218 -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Appointment Scheduling</title>
+        
+
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- google icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    </head>
+    <body id="hosp_top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <header id="header">
+            <div class="header-nav-wrapper navbar-scrolltofixed">
+                <div class="container">
+                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                        <div class="container" style="color: cornflowerblue">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand page-scroll" href="index.html"><strong>Doct-o-Help</strong></a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav">
+                                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                                    <li class="hidden">
+                                        <a class="page-scroll" href="#page-top"></a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="#About">About</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="#services">Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                    </li>
+                                    
+                                    <span style="float: right"><li><strong><a href="https://app.acuityscheduling.com/schedule.php?owner=14878058" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script></strong></li></span>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container" id="ab" >
+            <div class="head"><h1>Hospitals</h1></div>
+            <div class="row">
+                <div class="col-md-8" id="main">
+                    <div class="doctabs">
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/sg.jpg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>SG Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302025</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        B1, Ashadeep Enclave-A, Nilay Kunj Road, Jagatpura, Karolan Ka Barh
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=SG+Hospital" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+                   
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/NARAYAN.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Genral Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Narayana Multispeciality Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302033</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        Rana Sanga Marg, Sector 28, Sitapura Industrial Area, Pratap Nagar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14951995&location=Narayana+Multispeciality+Hospital" target="_blank" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14951995.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14951995.js" async></script>
+                            </div> 
+                        </div>
+                        
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/apex.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Apex Hospitals</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302017</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        SP-4 & 6, Malviya Nagar Industrial Area, Malviya Nagar, Jhalana Gram, Malviya Nagar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14951995&location=Apex+Hospitals" target="_blank" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14951995.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14951995.js" async></script>
+                            </div> 
+                        </div>
+
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/agarwl.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Agarwal Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302029</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        Station Rd, Dada Gurudev Nagar, Sanganer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14951995&location=Agarwal+Hospital" target="_blank" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14951995.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14951995.js" async></script>
+                            </div> 
+                        </div>
+                        
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/fortis.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Genral Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Fortis Escorts Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302017</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        Jawahar Lal Nehru Marg, Malviya Nagar, Sector 5, Malviya Nagar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=sms" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/jain.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Jain Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302011</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        Inside Malpura Gate, Sanganer, Govind Nagar, Maruti Nagar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=Mahatma+Gandhi+Hospital" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/rungt.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Genral Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Rungta Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302017</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        Calgiri Road, Near Police Station, Jhalana Gram, Malviya Nagar, Jhalana Gram, Malviya Nagar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=Mahatma+Gandhi+Hospital" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/jp.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Genral Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Jaipur Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302018</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        S16A, S17, Mahaveer Nagar, Near Gopalpura Flyover, Tonk Toad, Muktanand Nagar, Gopal Pura Mode
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=sms" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+                         
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/bhandari.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Private Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Bhandari Hospital & Research Centre</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302018</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        138 A, Vasundhara Colony, Gopalpura Bypass, Tonk Road, Muktanand Nagar, Gopal Pura Mode
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=sms" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+
+                        
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/apollo.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Genral Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Apollo Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302031</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        239, Chetak Vihar Colony, Baldeogarh
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=sms" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+
+                        
+                        <div class="doctab">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img src="img/jp.jpeg" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>Genral Hospital </small>
+                                    </div>
+                                    <div class="rest-name">
+                                        <a href="#"><strong>Jaipur Hospital</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong>Jaipur, Rajasthan 302015</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        Near SMS Stadium,, Tonk Rd, Jaipur Nagar Nigam, LalkothiNear SMS Stadium
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Days:</small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>Mon - Sat</div>
+                                    <div>8am to 10pm</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <a href="https://app.acuityscheduling.com/schedule.php?owner=14878058&location=sms" target="_blank" class="acuity-embed-button" style="background: #0066cc; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/14878058.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/14878058.js" async></script>
+                            </div> 
+                        </div>
+  
+                    </div>
+                </div>
+                <div class="col-md-4" id="side">
+                    <div id="contact">
+                        <div id="map"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6JTD44gG04u_kR8ZiBFlKtSDuiu7i7WI&callback=initMap">
+    </script>
+    
+        <script src="hosp.js"></script>
+    </body>
+</html>

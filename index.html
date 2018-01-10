@@ -24,9 +24,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- google icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
+
 
 
     </head>
@@ -43,7 +41,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand page-scroll" href="#page-top"><strong>Doct-o-Help</strong></a>
+                                <a class="navbar-brand page-scroll" href="#page-top"><strong>Doct-0-Help</strong></a>
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -180,11 +178,11 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="thumb hidden-xs hidden-sm">
-                            <img class="img-responsive" src="img/doc1.png"  alt="project">
+                            <img class="img-responsive" src="img/Logopit_1515579570425.png" alt="project">
                           </div>
                         </div>
                         <div class="col-md-8">
-                          <h2 class="text-theme-colored mt-30" style="text-align: center">Welcome To  <span class="text-theme-colored2">DocSked</span></h2>
+                          <h2 class="text-theme-colored mt-30" style="text-align: center">Welcome To DoctoHelp</h2>
                           <p>We want to become the technology used by patients and healthcare providers to coordinate care and empower patients to manage their health.
                               We help patients to find, book and manage their healthcare quickly and conveniently</p>
 
@@ -198,7 +196,7 @@
                                       <a href="mydoc.html" class="btn btn-info btn-lg" role="button">Find Doctors</a>
                                 </div>
                                 <div class="col-sm-6 col-md-6">
-                                      <a href="#" class="btn btn-info btn-lg" role="button">Find Hospitals</a>
+                                      <a href="hospital.html" class="btn btn-info btn-lg" role="button">Find Hospitals</a>
                                 </div>
                             </div>
                         </div>
@@ -282,9 +280,9 @@
         <div id="contact">
             <div id="map"></div>
             <div class="container content">
-                <h2>Contact</h2>
+                <h2>Contact</h2><hr>
                 <p style="font-size: 19px">JECRC University, Jaipur</p>
-                    <br>
+                    
                 <a href="#" class="btn btn-info btn-lg">
                   <span class="glyphicon glyphicon-phone-alt"></span> Contact <br>
                 </a>
@@ -296,9 +294,10 @@
         <script>
             function initMap() {
                 var uluru = {lat: 26.775501, lng: 75.877173};
+                var abc = {lat: 26.777701, lng: 75.877173};
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 16,
-                  center: uluru
+                  center: abc
                 });
                 var marker = new google.maps.Marker({
                   position: uluru,
