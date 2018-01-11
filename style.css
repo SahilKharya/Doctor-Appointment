@@ -16,7 +16,10 @@
     color: cornflowerblue;
 }
 p{
-    font-size: 2rem;
+    font-size: 18px;
+}
+a {
+    font-size: 18px;
 }
 
 .icon-circled {
