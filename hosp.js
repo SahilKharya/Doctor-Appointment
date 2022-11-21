@@ -2,7 +2,7 @@
 function searchDoctor() {
         if(document.getElementById("doctor").value == 'Shivam'){
                 document.getElementById("find").innerHTML +=
-                "<h5>Doctor Found</h5>";
+                "<h5>Doctor Available</h5>";
         } else {
                 document.getElementById("find").innerHTML +=
                 "<h5>Not Found</h5>";
@@ -12,7 +12,7 @@ function searchDoctor() {
 function searchHospital() {
         if(document.getElementById("doctor").value == 'SG Hospital'){
                 document.getElementById("find").innerHTML +=
-                "<h5>Hospital Available</h5>";
+                "<h5>Hospital is Available</h5>";
         } else {
                 document.getElementById("find").innerHTML +=
                 "<h5>Not Found</h5>";
